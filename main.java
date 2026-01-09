@@ -3,15 +3,15 @@ package aka;
 public class main {
 
 	public static void main(String[] args) {
-		int[] data = {3, 7, 1, 9, 5, 8};
-        int nilaiPembanding = 5;
+		int[] data = {10, 100, 1000, 10000, 100000};
+        int nilaiPembanding = 57500;
 
-        iteratif hitung = new iteratif();
-        int hasil = hitung.hitungLebihBesar(data, nilaiPembanding);
+        algoritma hitung = new algoritma();
+        int hasilIteratif = hitung.hitungIteratif(data, nilaiPembanding);
+		int hasilRekursif = hitung.hitungRekursif(data, nilaiPembanding, 0);
         
-        System.out.println(
-            "\nJumlah elemen yang lebih besar dari " 
-            + nilaiPembanding + " adalah: " + hasil
-        );
+        System.out.println("Jumlah elemen > " + nilaiPembanding + " (iteratif): " + hasilIteratif);
+        System.out.println("Jumlah elemen > " + nilaiPembanding + " (rekursif): " + hasilRekursif);
     }
 }
+

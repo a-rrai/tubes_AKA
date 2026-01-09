@@ -1,13 +1,11 @@
 package aka;
 
-public class iteratif {
-	public int hitungLebihBesar(int[] data, int nilaiPembanding) {
+public class algoritma {
+	public int hitungIteratif(int[] data, int nilaiPembanding) {
 		int jumlah = 0;
 		
-		System.out.print("Elemen yang lebih besar dari " + nilaiPembanding + " adalah: ");
 	    for (int i = 0; i < data.length; i++) {
 	        if (data[i] > nilaiPembanding) {
-	        	System.out.print(data[i] + " ");
 	        	jumlah++;
 	        }
 	    }
